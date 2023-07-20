@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="451.0" prefWidth="700.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ViewPKG.CustomerMenuController">
+   <children>
+      <Label alignment="CENTER" prefHeight="48.0" prefWidth="216.0" text="Customer Menu " textFill="#8888f6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="itemMenu" layoutX="400.0" prefHeight="459.0" prefWidth="300.0" style="-fx-background-color: #696969;" />
+      <TextField fx:id="searchField" layoutX="160.0" layoutY="408.0" prefHeight="25.0" prefWidth="163.0" promptText="Search Here..." style="-fx-background-color: #686868;" />
+      <Button fx:id="searchButton" layoutX="324.0" layoutY="408.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #8888f6;" text="Search" textFill="#404040" />
+      <Button fx:id="logoutButton" layoutX="24.0" layoutY="408.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #8888f6;" text="Logout" textFill="#404040" />
+      <Button fx:id="viewPersonalInfoButton" layoutX="24.0" layoutY="216.0" mnemonicParsing="false" onAction="#seePersonalInformation" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #8888f6;" text="See Personal Information" textFill="#404040" />
+      <Button fx:id="viewBasketButton" layoutX="24.0" layoutY="248.0" mnemonicParsing="false" onAction="#viewBasket" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #8888f6;" text="View Basket" textFill="#404040" />
+      <Button fx:id="addFundsButton" layoutX="24.0" layoutY="280.0" mnemonicParsing="false" onAction="#addFund" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #8888f6;" text="Add Funds" textFill="#404040" />
+      <Label fx:id="welcomeTextLabel" alignment="CENTER" layoutY="48.0" prefHeight="48.0" prefWidth="216.0" textFill="#8888f6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shoppingCart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="cartProductAmount" alignment="CENTER" layoutX="357.0" layoutY="12.0" prefHeight="34.0" prefWidth="27.0" textFill="#8888f6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="96.0" prefHeight="13.0" prefWidth="88.0" text="Balance : " textFill="#8888f6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceLabel" alignment="CENTER" layoutX="108.0" layoutY="96.0" prefHeight="18.0" prefWidth="88.0" textFill="#8888f6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="selectProductButton" layoutX="277.0" layoutY="323.0" mnemonicParsing="false" onAction="#selectProduct" style="-fx-background-color: #8888f6;" text="Select Product" textFill="#404040" />
+      <Button fx:id="checkoutButton" layoutX="24.0" layoutY="184.0" mnemonicParsing="false" onAction="#checkout" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #8888f6;" text="Checkout" textFill="#404040" />
+      <TextField fx:id="discountCodeField" alignment="CENTER" layoutX="24.0" layoutY="150.0" prefHeight="26.0" prefWidth="150.0" promptText="Enter Discount" style="-fx-background-color: #696969;" />
+   </children>
+</AnchorPane>
